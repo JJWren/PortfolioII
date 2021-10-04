@@ -7,6 +7,13 @@ namespace PortfolioII.Controllers
     {
         [HttpGet]
         [Route("")]
+        public IActionResult Index()
+        {
+            return RedirectToAction("AboutMe");
+        }
+        
+        [HttpGet]
+        [Route("home")]
         public IActionResult AboutMe()
         {
             return View();
