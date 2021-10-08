@@ -10,7 +10,7 @@
     <title>Portfolio - Contact</title>
 </head>
 
-<body>
+<body class="bg-secondary">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
@@ -20,20 +20,33 @@
             </div>
         </div>
     </nav>
-    <div id="belowNavigation">
-        <h1 id="pageHeader">Contact</h1>
-        <div id="bodyBelowHeader">
-            <div id="contactFormContainer">
-                <form action="/">
-                    <div id="formContact">
-                        <label for="name">Name: </label>
-                        <input type="text" id="name">
-                        <label for="email">Email: </label>
-                        <input type="email" id="email">
+    <div class="d-flex flex-column bg-light m-5" id="belowNavigation">
+        <h1 class="text-center py-3" id="pageHeader">Contact Me</h1>
+        <div class="d-flex flex-row justify-content-center" id="bodyBelowHeader">
+            <div class="pb-5" id="contactFormContainer">
+                <form class="d-flex flex-column" action="/Contact">
+                    <div class="d-flex flex-row justify-content-around">
+                        <div class="form-group col-5" id="formContact">
+                            <div class="form-group row">
+                                <label class="col-form-label" for="name">Name</label>
+                                <input class="form-control" type="text" id="name">
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-form-label" for="email">Email</label>
+                                <input class="form-control" type="email" id="email">
+                            </div>
+                        </div>
+                        <div class="form-group col-5">
+                            <label class="col-form-label" for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" cols="50"></textarea>
+                        </div>
                     </div>
-                    <div>
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    <div class="d-flex justify-content-around mt-2">
+                        <div class="col-5"></div>
+                        <div class="col-5 d-flex justify-content-end">
+                            <button type="submit" class="btn btn-rounded btn-outline-info">Send</button>
+                        </div>
                     </div>
                 </form>
             </div>
